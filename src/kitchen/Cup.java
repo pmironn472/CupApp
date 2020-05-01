@@ -37,9 +37,4 @@ public class Cup {
         return liquidVolume;
     }
 
-    
-
-    public void printInfo() {
-        System.out.println("cupA with " + getLiquidVolume() + " ml of " + getLiquidName());
-    }
 }
