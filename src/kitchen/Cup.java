@@ -37,13 +37,7 @@ public class Cup {
         return liquidVolume;
     }
 
-    public void plusLiquid(int liquidVolume) {
-        setLiquidVolume(this.liquidVolume + liquidVolume);
-    }
-
-    public void minustLiquid(int liquidVolume) {
-        setLiquidVolume(this.liquidVolume - liquidVolume);
-    }
+    
 
     public void printInfo() {
         System.out.println("cupA with " + getLiquidVolume() + " ml of " + getLiquidName());

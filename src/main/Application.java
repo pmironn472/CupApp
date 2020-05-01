@@ -15,8 +15,8 @@ public class Application {
         System.out.println();
         System.out.println("After changes: ");
 
-        cupA.minustLiquid(50);
-        cupB.plusLiquid(50);
+        cupA.setLiquidVolume(250.00);
+        cupB.setLiquidVolume(550.00);
 
         cupA.printInfo();
         cupB.printInfo();
