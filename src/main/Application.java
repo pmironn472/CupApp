@@ -8,7 +8,7 @@ public class Application {
         Cup cupB = new Cup("Water", 500.00);
 
         System.out.println("CupA: " + (cupA.getLiquidVolume() - 50) + " " + cupA.getLiquidName());
-        System.out.println("CupA: " + (cupB.getLiquidVolume() + 50) + " " + cupB.getLiquidName());
+        System.out.println("CupB: " + (cupB.getLiquidVolume() + 50) + " " + cupB.getLiquidName());
 
 
     }
