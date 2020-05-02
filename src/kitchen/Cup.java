@@ -1,17 +1,17 @@
 package kitchen;
 
 public class Cup {
-    private String liquidName ;
+    private String liquidName;
     private Double liquidVolume;
 
     public Cup() {
-
     }
 
     public Cup(String liquidName, Double liquidVolume) {
         setLiquidName(liquidName);
         setLiquidVolume(liquidVolume);
     }
+
 
     public void setLiquidName(String liquidName) {
         if (liquidName.equals("Water") || liquidName.equals("Milk") || liquidName.equals("Tea")) {
