@@ -3,6 +3,7 @@ package main;
 import kitchen.BigCup;
 import kitchen.Cup;
 import kitchen.SmallCup;
+import world.Liquid;
 
 public class Application {
     public static void main(String[] args) {
@@ -30,6 +31,24 @@ public class Application {
         cupB.setLiquidVolume(0.00);
         System.out.println("BigCup + cupB: " + bigC.getLiquidVolume() + " " + bigC.getLiquidName());
         System.out.println("cupB now has : " + cupB.getLiquidVolume() + " " + cupB.getLiquidName());
+
+
+        System.out.println();
+
+
+        Liquid p1 = new Liquid("Water", 300, 16.00);
+        Liquid p2 = new Liquid("Milk", 300, 25.00);
+        Liquid p3 = new Liquid("Tea", 300, 39.00);
+        Liquid p4 = new Liquid("      ", 300, 39.00);
+
+        p1.isCold();
+        p2.isWarm();
+        p3.isHot();
+
+        System.out.println();
+
+        p4.isCold();
+
 
     }
 }
