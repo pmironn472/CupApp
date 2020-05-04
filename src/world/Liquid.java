@@ -34,10 +34,6 @@ public class Liquid {
     public void setTemperture(Double temperture) {
         if (temperture >= 0 && temperture <= 100) {
             this.temperture = temperture;
-            if (temperture == 0)
-                System.out.println("Freeze at 0 °C !");
-            if (temperture == 100)
-                System.out.println("Evaporate at 100 °C !");
         } else {
             System.err.println("Error");
         }
