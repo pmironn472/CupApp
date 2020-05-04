@@ -16,7 +16,7 @@ public class Liquid {
     }
 
     public void setName(String name) {
-        if (name.contains(" ")) {
+        if (name.length() == 0) {
             System.err.println("Error");
         } else {
             this.name = name;
@@ -54,36 +54,18 @@ public class Liquid {
 
 
     public Boolean isCold() {
-        if (getTemperture() <= 18) {
-            System.out.println("Is Cold ? - True");
-        } else {
-            System.out.println("Is Cold ? - False");
+        return (getTemperture() <= 18);
 
-        }
-        return true;
     }
 
 
     public Boolean isWarm() {
-        if (getTemperture() > 18 && getTemperture() <= 36) {
-            System.out.println("Is Warm ? - True");
+        return (getTemperture() > 18 && getTemperture() <= 36);
 
-        } else {
-            System.out.println("Is Warm ? - False");
-
-        }
-        return true;
     }
 
     public Boolean isHot() {
-        if (getTemperture() > 36) {
-            System.out.println("Is Hot ? - True");
-
-        } else {
-            System.out.println("Is Hot ? - False");
-
-        }
-        return true;
+        return (getTemperture() > 36);
     }
 
 }

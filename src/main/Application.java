@@ -39,7 +39,7 @@ public class Application {
         Liquid p1 = new Liquid("Water", 300, 16.00);
         Liquid p2 = new Liquid("Milk", 300, 25.00);
         Liquid p3 = new Liquid("Tea", 300, 39.00);
-        Liquid p4 = new Liquid("      ", 300, 39.00);
+        Liquid p4 = new Liquid("", 300, 39.00);
 
         p1.isCold();
         p2.isWarm();
