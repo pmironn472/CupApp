@@ -1,40 +1,29 @@
 package kitchen;
 
+import world.Liquid;
+
 public class Cup {
-    private String liquidName;
-    protected Double liquidVolume;
+
+    private Liquid liquid;
+    final static int MAX_VOLUME = 600;
 
     public Cup() {
     }
 
-    public Cup(String liquidName, Double liquidVolume) {
-        setLiquidName(liquidName);
-        setLiquidVolume(liquidVolume);
+    public Cup(Liquid liquid) {
+        setLiquid(liquid);
     }
 
 
-    public void setLiquidName(String liquidName) {
-        if (liquidName.equals("Water") || liquidName.equals("Milk") || liquidName.equals("Tea")) {
-            this.liquidName = liquidName;
-        } else {
-            System.err.println("There is no such product");
-        }
+    public void setLiquid(Liquid liquid) {
+        if (liquid.getVolume() <= MAX_VOLUME) {
+            this.liquid = liquid;
+        } else
+            System.err.println("Error");
     }
 
-    public void setLiquidVolume(Double liquidVolume) {
-        if (liquidVolume >= 0 && liquidVolume <= 600) {
-            this.liquidVolume = liquidVolume;
-        } else {
-            System.err.println("To much ml");
-        }
-    }
-
-    public String getLiquidName() {
-        return liquidName;
-    }
-
-    public Double getLiquidVolume() {
-        return liquidVolume;
+    public Liquid getLiquid() {
+        return liquid;
     }
 
 }

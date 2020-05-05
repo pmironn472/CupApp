@@ -1,20 +1,16 @@
 package kitchen;
 
+import world.Liquid;
+
 public class SmallCup extends Cup {
 
 
     public SmallCup() {
     }
 
-    public SmallCup(String liquidName, Double liquidVolume) {
-        super(liquidName, liquidVolume);
+    public SmallCup(Liquid liquid) {
+        super(liquid);
     }
 
-    public void setLiquidVolume(Double liquidVolume) {
-        if (liquidVolume >= 0 && liquidVolume <= 250) {
-            this.liquidVolume=liquidVolume;
-        } else {
-            System.err.println("Error");
-        }
-    }
+
 }
