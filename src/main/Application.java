@@ -19,6 +19,7 @@ public class Application {
 
         System.out.println();
 
+
         p1.setVolume(p1.getVolume() + 50);
 
         System.out.println(standartCup.getLiquid().getName());
@@ -26,5 +27,11 @@ public class Application {
         System.out.println(standartCup.getLiquid().getTemperture());
 
 
+        System.out.println();
+
+        System.out.println(p1.isHot());
     }
 }
+
+
+//
