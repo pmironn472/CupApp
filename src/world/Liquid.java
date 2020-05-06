@@ -1,5 +1,7 @@
 package world;
 
+import world.DrinkableLiquid;
+
 public class Liquid {
     private String name;
     private Integer volume;
@@ -66,6 +68,14 @@ public class Liquid {
 
     public Boolean isHot() {
         return (getTemperture() > 36);
+    }
+
+    public String getCategory() {
+        return getCategory();
+    }
+
+    public String getLevel() {
+        return getLevel();
     }
 
 }

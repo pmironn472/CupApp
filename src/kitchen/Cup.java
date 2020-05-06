@@ -2,7 +2,7 @@ package kitchen;
 
 import world.Liquid;
 
-public class Cup {
+public class Cup  {
 
     private Liquid liquid;
     final static int MAX_VOLUME = 600;
